@@ -438,13 +438,13 @@
     "headNodeImages": {
       "WindowsServer2016": {
         "publisher": "MicrosoftWindowsServerHPCPack",
-        "offer": "WindowsServerHPCPack",
+        "offer": "WindowsServerHPCPack-preview",
         "sku": "2019hn-ws2016",
         "version": "latest"
       },
       "WindowsServer2019": {
         "publisher": "MicrosoftWindowsServerHPCPack",
-        "offer": "WindowsServerHPCPack",
+        "offer": "WindowsServerHPCPack-preview",
         "sku": "2019hn-ws2019",
         "version": "latest"
       },
@@ -501,7 +501,7 @@
     },
     "headNodeImageRef": "[variables('headNodeImages')[parameters('headNodeOS')]]",
     "computeNodeImageRef": "[variables('computeNodeImages')[parameters('computeNodeImage')]]",
-    "sharedResxBaseUrl": "https://raw.githubusercontent.com/Azure/hpcpack-template/master/HPCPack2019/shared-resources"
+    "sharedResxBaseUrl": "https://raw.githubusercontent.com/sunbinzhu/hpcpack-template/previewimage/HPCPack2019/shared-resources"
   },
   "resources": [
     {

@@ -458,13 +458,13 @@
     "headNodeImages": {
       "WindowsServer2016": {
         "publisher": "MicrosoftWindowsServerHPCPack",
-        "offer": "WindowsServerHPCPack",
+        "offer": "WindowsServerHPCPack-preview",
         "sku": "2019hn-ws2016",
         "version": "latest"
       },
       "WindowsServer2019": {
         "publisher": "MicrosoftWindowsServerHPCPack",
-        "offer": "WindowsServerHPCPack",
+        "offer": "WindowsServerHPCPack-preview",
         "sku": "2019hn-ws2019",
         "version": "latest"
       },
@@ -696,7 +696,7 @@
     "headNodeImageRef": "[variables('headNodeImages')[parameters('headNodeOS')]]",
     "computeNodeImageRef": "[variables('computeNodeImages')[parameters('computeNodeImage')]]",
     "rdmaDriverSupportedCNImage": "[and(or(contains(parameters('computeNodeImage'), 'CentOS_7'), contains(parameters('computeNodeImage'), 'RHEL_7')), not(contains(parameters('computeNodeImage'), '_HPC')))]",
-    "sharedResxBaseUrl": "https://raw.githubusercontent.com/Azure/hpcpack-template/master/HPCPack2019/shared-resources"
+    "sharedResxBaseUrl": "https://raw.githubusercontent.com/sunbinzhu/hpcpack-template/previewimage/HPCPack2019/shared-resources"
   },
   "resources": [
     {
